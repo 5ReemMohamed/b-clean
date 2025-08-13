@@ -305,10 +305,10 @@ h1 {
 .experience-badge {
     position: absolute;
     bottom: 10px;
-    left: 80px;
+    left: 30px;
     background: #fff;
     color: black;
-    padding: 10px 55px;
+    padding: 10px 45px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -540,6 +540,10 @@ html[dir="ltr"] .feature-item:hover {
 .floating-icons i:nth-child(4) { left: 86%; top:45%; animation-delay: 0.9s; }
 
 @media screen and (min-width:992px) {
+    .experience-badge {
+    left: 80px;
+    }
+
     .floating-icons i:nth-child(1) { left: 2%; top:70%; animation-delay: 0s; }
 .floating-icons i:nth-child(2) { left: 37%; top:30%; animation-delay: 0.3s; }
 .floating-icons i:nth-child(3) { left: 61%;  top:90%; animation-delay: 0.6s; }
@@ -716,6 +720,6 @@ html[dir="ltr"] .cleaning-heading {
 }
 
 @keyframes shine {
-    0% { left: -75%; }
+    0% { left: 0%; }
     100% { left: 125%; }
 }
