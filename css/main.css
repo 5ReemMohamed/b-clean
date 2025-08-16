@@ -1374,11 +1374,8 @@ margin-bottom: 30px;
 .contact .box::after {
     content: "";
     position: absolute;
-    top: 0; left: -75%;
-    width: 50%; height: 100%;
+    inset: 0%;
     background: rgba(255, 255, 255, 0.1);
-    transform: skewX(-25deg);
-    animation: shine 2s infinite;
     z-index: -1;
 }
 .contact .box .icon{
