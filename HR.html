@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="lrt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool & Cleaning Solutions</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-sparkles me-2"></i>
+                B Clean
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center gap-3 gap-lg-4 mb-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الرئيسية" data-en="Home" href="index.html#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="من نحن" data-en="About"  href="index.html#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الخدمات" data-en="Services"  href="index.html#services">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الأسعار" data-en="Pricing"  href="index.html#pricing">الأسعار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الفريق" data-en="Team"  href="index.html#team">الفريق</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="اتصل بنا" data-en="Contact"  href="index.html#contact">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-ar="الإدارة" data-en=""  href="administrative.html" role="button" data-bs-toggle="dropdown">
+                            الإدارة
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" data-ar="النماذج الإدارية" data-en="Administrative Models"  href="administrative.html">النماذج الإدارية</a></li>
+                            <li><a class="dropdown-item" data-ar="ادارة المخزون" data-en="Inventory Management"  href="warehouse.html">إدارة المخزون</a></li>
+                            <li><a class="dropdown-item" data-ar="الموارد البشرية" data-en="Human Resources"  href="#">الموارد البشرية</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <button class="btn btn-outline-light me-2" id="langBtn">
+                        <i class="fas fa-language"></i>
+                        EN
+                    </button>
+                    <a href="https://wa.me/249123456789" class="btn btn-success" data-ar="واتساب" data-en="Whatsapp" >
+                        <i class="fab fa-whatsapp me-1"></i>
+                        <span>واتساب</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main>
+    <section class="section-padding admin-header">
+          <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                   <h1 class="fw-bold mb-4" data-ar="الموارد البشرية" data-en="Human Resources">
+                        <i class="fas fa-users me-3"></i>
+                        الموارد البشرية
+                    </h1>
+
+                    <p class="lead" data-ar="إدارة الموظفين والحضور والرواتب" data-en="Managing employees, attendance, and payroll">
+                        إدارة الموظفين والحضور والرواتب
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 id="totalEmployees">12</h3>
+                    <p class="text-muted mb-0" data-ar="إجمالي الموظفين" data-en="Total Employees">
+                        إجمالي الموظفين
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 id="presentToday">10</h3>
+                    <p class="text-muted mb-0" data-ar="حاضر اليوم" data-en="Present Today">
+                        حاضر اليوم
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon ">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 id="lateToday">1</h3>
+                    <p class="text-muted mb-0" data-ar="متأخر اليوم" data-en="Late Today">
+                        متأخر اليوم
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                    <h3 id="absentToday">1</h3>
+                    <p class="text-muted mb-0" data-ar="غائب اليوم" data-en="Absent Today">
+                        غائب اليوم
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Employee Management -->
+        <div class="form-section">
+            <div class="form-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 data-ar="قائمة الموظفين" data-en="Employee List">
+                            <i class="fas fa-id-card me-2"></i>
+                            قائمة الموظفين
+                        </h3>
+
+                        <p class="text-muted mb-0" data-ar="إدارة بيانات الموظفين والحضور والرواتب" data-en="Manage employee data, attendance, and payroll">
+                            إدارة بيانات الموظفين والحضور والرواتب
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="searchEmployees" 
+                            placeholder="البحث في الموظفين..." 
+                            data-ar="البحث في الموظفين..." 
+                            data-en="Search employees..."
+                        >
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="filterDepartment">
+                        <option value="" data-ar="جميع الأقسام" data-en="All Departments">جميع الأقسام</option>
+                        <option value="cleaning" data-ar="التنظيف" data-en="Cleaning">التنظيف</option>
+                        <option value="management" data-ar="الإدارة" data-en="Management">الإدارة</option>
+                        <option value="marketing" data-ar="التسويق" data-en="Marketing">التسويق</option>
+                        <option value="finance" data-ar="المالية" data-en="Finance">المالية</option>
+                    </select>
+
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="filterAttendance">
+                        <option value="" data-ar="جميع حالات الحضور" data-en="All Attendance Statuses">جميع حالات الحضور</option>
+                        <option value="present" data-ar="حاضر" data-en="Present">حاضر</option>
+                        <option value="absent" data-ar="غائب" data-en="Absent">غائب</option>
+                        <option value="late" data-ar="متأخر" data-en="Late">متأخر</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn first-btn" data-ar="تصفية" data-en="Filter">
+                        <i class="fas fa-filter"></i>
+                        تصفية
+                    </button>
+
+                </div>
+            </div>
+            
+            <div class="row g-4" id="employeesList">
+                <!-- Employees will be loaded here -->
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <h3 data-ar="تقويم الحضور" data-en="Attendance Calendar">
+                    <i class="fas fa-calendar-alt me-2"></i>
+                    تقويم الحضور
+                </h3>
+
+                <p class="text-muted mb-0" data-ar="تتبع حضور الموظفين لهذا الشهر" data-en="Track employee attendance for this month">
+                    تتبع حضور الموظفين لهذا الشهر
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="form-label" data-ar="اختر الموظف" data-en="Select Employee">اختر الموظف</label>
+                    <select class="form-select" id="attendanceEmployee">
+                        <option value="" data-ar="اختر موظف" data-en="Select Employee">اختر موظف</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" data-ar="الشهر" data-en="Month">الشهر</label>
+                    <input type="month" class="form-control" id="attendanceMonth">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">&nbsp;</label>
+                    <button class="btn first-btn w-100" data-ar="تسجيل حضور" data-en="Register Attendance">
+                        <i class="fas fa-plus me-1"></i>
+                        تسجيل حضور
+                    </button>
+
+                </div>
+            </div>
+            
+            <div id="attendanceCalendar" class="mt-4">
+                <!-- Calendar will be displayed here -->
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+               <h3 data-ar="إدارة الرواتب" data-en="Payroll Management">
+                    <i class="fas fa-money-bill-wave me-2"></i>
+                    إدارة الرواتب
+                </h3>
+
+                <p class="text-muted mb-0" data-ar="متابعة حالة استلام الرواتب الشهرية" data-en="Track monthly salary payments">
+                    متابعة حالة استلام الرواتب الشهرية
+                </p>
+
+            </div>
+            
+           <div class="row mb-4">
+                <div class="col-md-6">
+                    <label class="form-label" data-ar="الشهر والسنة" data-en="Month & Year">الشهر والسنة</label>
+                    <input type="month" class="form-control" id="salaryMonth">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">&nbsp;</label>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-success flex-fill" data-ar="دفع جميع الرواتب" data-en="Pay All Salaries">
+                            <i class="fas fa-check me-1"></i>
+                            دفع جميع الرواتب
+                        </button>
+                        <button class="btn first-btn"  data-ar="تقرير" data-en="Report">
+                            <i class="fas fa-file-pdf me-1"></i>
+                            تقرير
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+           <div class="table-responsive">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th data-ar="الموظف" data-en="Employee">الموظف</th>
+                            <th data-ar="المنصب" data-en="Position">المنصب</th>
+                            <th data-ar="الراتب الشهري" data-en="Monthly Salary">الراتب الشهري</th>
+                            <th data-ar="أيام الحضور" data-en="Attendance Days">أيام الحضور</th>
+                            <th data-ar="الراتب المستحق" data-en="Due Salary">الراتب المستحق</th>
+                            <th data-ar="حالة الاستلام" data-en="Payment Status">حالة الاستلام</th>
+                            <th data-ar="الإجراءات" data-en="Actions">الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salaryTable">
+                        <!-- Salary data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    </section>
+</main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/administrative.js"></script>
+</body>
+</html>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pool & Cleaning Solutions</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link href="css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -44,16 +46,16 @@
                     <li class="nav-item">
                         <a class="nav-link" data-ar="اتصل بنا" data-en="Contact"  href="#contact">اتصل بنا</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-ar="الإدارة" data-en=""  href="#" role="button" data-bs-toggle="dropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-ar="الإدارة" data-en=""  href="administrative.html" role="button" data-bs-toggle="dropdown">
                             الإدارة
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" data-ar="" data-en="Administrative Models"  href="forms.html">النماذج الإدارية</a></li>
-                            <li><a class="dropdown-item" data-ar="" data-en="Inventory Management"  href="warehouse.html">إدارة المخزون</a></li>
-                            <li><a class="dropdown-item" data-ar="" data-en="Human Resources"  href="hr.html">الموارد البشرية</a></li>
+                            <li><a class="dropdown-item" data-ar="النماذج الإدارية" data-en="Administrative Models"  href="administrative.html">النماذج الإدارية</a></li>
+                            <li><a class="dropdown-item" data-ar="ادارة المخزون" data-en="Inventory Management"  href="warehouse.html">إدارة المخزون</a></li>
+                            <li><a class="dropdown-item" data-ar="الموارد البشرية" data-en="Human Resources"  href="HR.html">الموارد البشرية</a></li>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
                 
                 <div class="d-flex align-items-center justify-content-center gap-3">
@@ -101,11 +103,11 @@
                         باستخدام أدوات ومواد فعالة وفريق مدرب لضمان رضا العملاء
                     </p>
               <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center hero-buttons">
-                <a href="" class="btn first-btn" data-ar="تعرف علينا" data-en="Know More"> 
+                <a href="#about" class="btn first-btn" data-ar="تعرف علينا" data-en="Know More"> 
                   <i class="fas fa-broom"></i>
                   تعرف علينا
                 </a>
-                <a href="" class="btn second-btn" data-ar="اطلب خدمة" data-en="Request a service"> 
+                <a href="#services" class="btn second-btn" data-ar="اطلب خدمة" data-en="Request a service"> 
                   <i class="fas fa-info-circle"></i>
                   اطلب الخدمة
                 </a>
@@ -251,8 +253,8 @@
     <section class="section-padding" >
         <div class="container">
               
-                <div class=" text-center mb-5 ">
-                    <h3 class="h4 fw-bold cleaning-heading" data-ar="الهيكل الإداري" data-en="Administrative structure">الهيكل الإداري</h3>
+                <div class=" heading text-center mb-5 ">
+                    <h2 class=" lang-text cleaning-heading" data-ar="الهيكل الإداري" data-en="Administrative structure">الهيكل الإداري</h2>
                 </div>
           
             <div class="row g-4">
@@ -303,8 +305,8 @@
     </section>
    <section id="services" class="cleaning-services section-padding" >
   <div class="container">
-    <div class=" mx-auto text-center mb-5 ">
-                    <h3 class="h4 fw-bold cleaning-heading" data-ar="خدماتنا" data-en="Our Services"> خدماتنا</h3>
+    <div class=" heading text-center mb-5 ">
+                    <h2 class=" lang-text cleaning-heading" data-ar="خدماتنا" data-en="Our Services"> خدماتنا</h2>
                 </div>
     <div class="row g-4">
      
@@ -323,7 +325,10 @@
                             <li data-ar="تنظيف الحمامات والمطابخ" data-en="Bathroom and kitchen cleaning">تنظيف الحمامات والمطابخ</li>
                             <li data-ar="إزالة الغبار والأتربة" data-en="Dust and dirt removal">إزالة الغبار والأتربة</li>
             </ul>
-            <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
           </div>
         </div>
       </div>
@@ -344,7 +349,10 @@
                 <li data-ar="التعقيم والتطهير" data-en="Sterilization and disinfection">التعقيم والتطهير</li>
                 <li data-ar="إزالة الأتربة المتراكمة" data-en="Removing accumulated dust">إزالة الأتربة المتراكمة</li>
             </ul>
-             <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
           </div>
         </div>
       </div>
@@ -364,7 +372,10 @@
                             <li data-ar="تلميع الرخام" data-en="Marble Polishing">تلميع الرخام</li>
                             <li data-ar="عناية بالباركيه" data-en="Parquet Care">عناية بالباركيه</li>
             </ul>
-             <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
           </div>
         </div>
       </div>
@@ -383,7 +394,10 @@
                             <li data-ar="تجفيف سريع" data-en="Fast Drying">تجفيف سريع</li>
                             <li data-ar="إزالة البقع الصعبة" data-en="Tough Stain Removal">إزالة البقع الصعبة</li>
             </ul>
-            <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+             <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
           </div>
         </div>
       </div>
@@ -402,7 +416,10 @@
                             <li data-ar="تنظيف اللافتات" data-en="Signage Cleaning">تنظيف اللافتات</li>
                             <li data-ar="تنظيف المداخل" data-en="Entrance Cleaning">تنظيف المداخل</li>
             </ul>
-             <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
           </div>
         </div>
       </div>
@@ -422,17 +439,462 @@
                             <li data-ar="تعقيم العيادات" data-en="Clinic Sterilization">تعقيم العيادات</li>
                             <li data-ar="تنظيف المدارس" data-en="School Cleaning">تنظيف المدارس</li>
                         </ul>
-           <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
           </div>
         </div>
       </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-offset="100">
+  <div class="service-card h-100">
+    <div class="img">
+      <img src="imgs/service7.jpg" alt="Sterilization Service">
+      <div class="overlay"></div>
     </div>
+    <div class="content">
+      <h5 data-ar="التعقيم" data-en="Sterilization">التعقيم</h5>
+      <p data-ar="تعقيم شامل للمساحات والأسطح باستخدام مواد آمنة وفعالة" 
+         data-en="Comprehensive sterilization of spaces and surfaces using safe and effective materials">
+         تعقيم شامل للمساحات والأسطح باستخدام مواد آمنة وفعالة
+      </p>
+      <ul class="service-features">
+        <li data-ar="تعقيم الأسطح بمطهرات معتمدة" data-en="Sterilizing surfaces with approved disinfectants">
+          تعقيم الأسطح بمطهرات معتمدة
+        </li>
+        <li data-ar="تعقيم المكاتب والمرافق العامة" data-en="Sterilizing offices and public facilities">
+          تعقيم المكاتب والمرافق العامة
+        </li>
+        <li data-ar="التطهير العميق للأماكن المغلقة" data-en="Deep disinfection of enclosed spaces">
+          التطهير العميق للأماكن المغلقة
+        </li>
+      </ul>
+       <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-offset="100">
+  <div class="service-card h-100">
+    <div class="img">
+      <img src="imgs/service8.jpg" alt="Insect Spray Service">
+      <div class="overlay"></div>
+    </div>
+    <div class="content">
+      <h5 data-ar="رش المبيدات" data-en="Insect Spray">رش المبيدات</h5>
+      <p data-ar="مكافحة الحشرات باستخدام مبيدات آمنة وفعالة" 
+         data-en="Pest control using safe and effective insecticides">
+         مكافحة الحشرات باستخدام مبيدات آمنة وفعالة
+      </p>
+      <ul class="service-features">
+        <li data-ar="رش داخلي وخارجي" data-en="Indoor and outdoor spraying">رش داخلي وخارجي</li>
+        <li data-ar="استخدام مبيدات آمنة ومعتمدة" data-en="Use of safe and approved insecticides">استخدام مبيدات آمنة ومعتمدة</li>
+        <li data-ar="مكافحة الحشرات الطائرة والزاحفة" data-en="Control of flying and crawling insects">مكافحة الحشرات الطائرة والزاحفة</li>
+      </ul>
+       <div class="d-flex gap-2 flex-wrap">
+                <a href="serviceDtails.html" data-ar="تفاصيل الخدمة" data-en="Servie Details" class="btn second-btn">تفاصيل الخدمة</a>
+                <a href="" data-ar="اطلب الخدمة" data-en="Request service">اطلب الخدمة</a>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+    <section id="pricing" class="section-padding pricing">
+        <div class="container">
+                <div class=" heading text-center mb-5 ">
+                    <h2 class=" lang-text cleaning-heading" data-ar="الأسعار" data-en="Pricing">الأسعار</h2>
+                </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-offset="100">
+                    <div class="pricing-calculator">
+                        <h4 class="mb-4" data-ar="حاسبة الأسعار" data-en="Price Calculator">حاسبة الأسعار</h4>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-offset="100">
+                                <label class="form-label text-light-blue" data-ar="نوع الخدمة" data-en="Type of service">نوع الخدمة</label>
+                               <select class="form-select" id="serviceType" onchange="calculatePrice()" data-ar="نوع الخدمة" data-en="Service Type">
+                                    <option value="" data-ar="اختر نوع الخدمة" data-en="Select Service Type">اختر نوع الخدمة</option>
+                                    <option value="regular" data-ar="تنظيف عادي" data-en="Regular Cleaning">تنظيف عادي</option>
+                                    <option value="deep" data-ar="تنظيف عميق" data-en="Deep Cleaning">تنظيف عميق</option>
+                                    <option value="specialized" data-ar="تنظيف متخصص" data-en="Specialized Cleaning">تنظيف متخصص</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-offset="100">
+                                <label class="form-label text-light-blue" data-ar="المساحة (متر مربع)" data-en="Area (m²)">
+                                    المساحة (متر مربع)
+                                </label>
+                                <input type="number" class="form-control" id="area" placeholder="120" 
+                                    data-ar="120" data-en="120" onchange="calculatePrice()">
+
+                            </div>
+                        </div>
+                        
+                        <div class="row g-3 mb-4">
+                           <div class="col-md-6" data-aos="fade-up" data-aos-offset="100">
+                                <label class="form-label text-light-blue" data-ar="عدد الزيارات" data-en="Number of Visits">
+                                    عدد الزيارات
+                                </label>
+                                <select class="form-select" id="visits" onchange="calculatePrice()" data-ar="عدد الزيارات" data-en="Number of Visits">
+                                    <option value="" data-ar="اختر عدد الزيارات" data-en="Select Number of Visits">اختر عدد الزيارات</option>
+                                    <option value="once" data-ar="مرة واحدة" data-en="Once">مرة واحدة</option>
+                                    <option value="weekly" data-ar="أسبوعي" data-en="Weekly">أسبوعي</option>
+                                    <option value="monthly" data-ar="شهري" data-en="Monthly">شهري</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6" data-aos="fade-up" data-aos-offset="100">
+                                <label class="form-label text-light-blue" data-ar="السعر المقدر" data-en="Estimated Price">
+                                    السعر المقدر
+                                </label>
+                                <div class="price-display" id="priceDisplay" data-ar="اختر الخيارات لحساب السعر" data-en="Select options to calculate price">
+                                    اختر الخيارات لحساب السعر
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="team" class="team-section section-padding bg-light">
+   <div class="container-fluid">
+        <div class="container">
+           
+            <div class=" heading text-center mb-5 ">
+                    <h2 class=" lang-text cleaning-heading" data-ar="فريقنا" data-en="Our Team"> فريقنا</h2>
+                </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-offset="100">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Richard L. Channel" class="team-image">
+                        </div>
+                        <div class="team-content">
+                            <h5 class="team-name" data-ar="علي أحمد" data-en="Ali Ahmed">علي أحمد</h5>
+                            <p class="team-position" data-ar="رئيس الشركة" data-en="Company President">رئيس الشركة</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                 <div class="col-lg-4 col-md-6"  data-aos="zoom-in" data-aos-offset="100">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Richard L. Channel" class="team-image">
+                        </div>
+                        <div class="team-content">
+                            <h5 class="team-name" data-ar="علي أحمد" data-en="Ali Ahmed">علي أحمد</h5>
+                            <p class="team-position" data-ar="رئيس الشركة" data-en="Company President">رئيس الشركة</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                 <div class="col-lg-4 col-md-6"  data-aos="zoom-in" data-aos-offset="100">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Richard L. Channel" class="team-image">
+                        </div>
+                        <div class="team-content">
+                            <h5 class="team-name" data-ar="علي أحمد" data-en="Ali Ahmed">علي أحمد</h5>
+                            <p class="team-position" data-ar="رئيس الشركة" data-en="Company President">رئيس الشركة</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-offset="100">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Richard L. Channel" class="team-image">
+                        </div>
+                        <div class="team-content">
+                            <h5 class="team-name" data-ar="علي أحمد" data-en="Ali Ahmed">علي أحمد</h5>
+                            <p class="team-position" data-ar="رئيس الشركة" data-en="Company President">رئيس الشركة</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                 <div class="col-lg-4 col-md-6"  data-aos="zoom-in" data-aos-offset="100">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Richard L. Channel" class="team-image">
+                        </div>
+                        <div class="team-content">
+                            <h5 class="team-name" data-ar="علي أحمد" data-en="Ali Ahmed">علي أحمد</h5>
+                            <p class="team-position" data-ar="رئيس الشركة" data-en="Company President">رئيس الشركة</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                 <div class="col-lg-4 col-md-6"  data-aos="zoom-in" data-aos-offset="100">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Richard L. Channel" class="team-image">
+                        </div>
+                        <div class="team-content">
+                            <h5 class="team-name" data-ar="علي أحمد" data-en="Ali Ahmed">علي أحمد</h5>
+                            <p class="team-position" data-ar="رئيس الشركة" data-en="Company President">رئيس الشركة</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+  <div class="container">
+  
+      <div class="heading text-center mb-5 ">
+        <h2 class="lang-text cleaning-heading" data-ar="آراء العملاء" data-en="Customer Reviews">آراء العملاء</h2>
+      </div>
+   
+
+    <!-- Swiper Slider -->
+    <div class="swiper testimonial-slider">
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide  h-100">
+          <div class="testimonial-card h-100">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text" data-ar='"خدمة ممتازة وفريق محترف. تم تنظيف المكتب بشكل مثالي."' data-en='"Excellent service and professional team. The office was cleaned perfectly."'>
+              "خدمة ممتازة وفريق محترف. تم تنظيف المكتب بشكل مثالي."
+            </p>
+            <div class="testimonial-author">
+              <strong data-ar="سارة أحمد" data-en="Sara Ahmed">سارة أحمد</strong>
+              <span data-ar="مديرة شركة" data-en="Company Manager">مديرة شركة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide  h-100">
+          <div class="testimonial-card h-100">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text" data-ar='"الفريق وصل في الموعد المحدد والنتيجة فاقت التوقعات."' data-en='"The team arrived on time and the results exceeded expectations."'>
+              "الفريق وصل في الموعد المحدد والنتيجة فاقت التوقعات."
+            </p>
+            <div class="testimonial-author">
+              <strong data-ar="خالد محمد" data-en="Khaled Mohamed">خالد محمد</strong>
+              <span data-ar="صاحب منزل" data-en="Home Owner">صاحب منزل</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide h-100">
+          <div class="testimonial-card h-100">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text" data-ar='"أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."' data-en='"Affordable prices and high-quality service. Highly recommended."'>
+              "أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."
+            </p>
+            <div class="testimonial-author">
+              <strong data-ar="ليلى عبدالرحمن" data-en="Laila Abdelrahman">ليلى عبدالرحمن</strong>
+              <span data-ar="طبيبة" data-en="Doctor">طبيبة</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-100">
+          <div class="testimonial-card h-100">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text" data-ar='"أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."' data-en='"Affordable prices and high-quality service. Highly recommended."'>
+              "أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."
+            </p>
+            <div class="testimonial-author">
+              <strong data-ar="ليلى عبدالرحمن" data-en="Laila Abdelrahman">ليلى عبدالرحمن</strong>
+              <span data-ar="طبيبة" data-en="Doctor">طبيبة</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-100">
+          <div class="testimonial-card h-100">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text" data-ar='"أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."' data-en='"Affordable prices and high-quality service. Highly recommended."'>
+              "أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."
+            </p>
+            <div class="testimonial-author">
+              <strong data-ar="ليلى عبدالرحمن" data-en="Laila Abdelrahman">ليلى عبدالرحمن</strong>
+              <span data-ar="طبيبة" data-en="Doctor">طبيبة</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-100">
+          <div class="testimonial-card h-100">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text" data-ar='"أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."' data-en='"Affordable prices and high-quality service. Highly recommended."'>
+              "أسعار معقولة وخدمة عالية الجودة. أنصح بشدة."
+            </p>
+            <div class="testimonial-author">
+              <strong data-ar="ليلى عبدالرحمن" data-en="Laila Abdelrahman">ليلى عبدالرحمن</strong>
+              <span data-ar="طبيبة" data-en="Doctor">طبيبة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination -->
+    </div>
+  </div>
+</section>
+<section class="py-5 contact" id="contact">
+  <div class="container">
+      <div class="heading text-center mb-5 ">
+        <h2 class="lang-text cleaning-heading" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+           <div class="row g-4">
+             <div class="col-lg-6">
+                <div class="box">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <h3 data-ar="الهاتف" data-en="Phone">الهاتف</h3>
+                  <a href=""></a>
+                </div>
+             </div>
+             <div class="col-lg-6">
+                <div class="box">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <h3 data-ar="البريد الإلكتروني" data-en="E-mail">البريد الإلكتروني</h3>
+                  <a href=""></a>
+                </div>
+             </div>
+             <div class="col-lg-6">
+                <div class="box">
+                  <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i> 
+                  </div>
+                  <h3 data-ar="العنوان" data-en="Address">العنوان</h3>
+                  <a href=""></a>
+                </div>
+             </div>
+             <div class="col-lg-6">
+                <div class="box">
+                  <div class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <h3 data-ar="واتساب" data-en="Whatsapp">واتساب</h3>
+                  <a href=""></a>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-lg-6">
+              <div class="contact-form">
+                        <h4 class="mb-4">اطلب خدمة</h4>
+                        <form id="serviceRequestForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" data-ar="الاسم" data-en="Name" placeholder="الاسم" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" data-ar="رقم الهاتف" data-en="Phone Number" placeholder="رقم الهاتف" required>
+                                </div>
+                                <div class="col-12">
+                                   <select class="form-select" required>
+                                      <option value="" data-ar="نوع الخدمة" data-en="Service Type">نوع الخدمة</option>
+                                      <option value="regular" data-ar="تنظيف عادي" data-en="Regular Cleaning">تنظيف عادي</option>
+                                      <option value="deep" data-ar="تنظيف عميق" data-en="Deep Cleaning">تنظيف عميق</option>
+                                      <option value="specialized" data-ar="تنظيف متخصص" data-en="Specialized Cleaning">تنظيف متخصص</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" 
+                                      class="form-control" 
+                                      placeholder="العنوان" 
+                                      data-ar="العنوان" 
+                                      data-en="Address" 
+                                      required
+                                    >
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="time" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                   <textarea class="form-control" rows="3" placeholder="ملاحظات إضافية" data-ar="ملاحظات إضافية" data-en="Additional Notes"></textarea>
+
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn first-btn w-100" data-ar="إرسال الطلب" data-en="Submit Request">
+                                        <i class="fas fa-paper-plane mx-2"></i>
+                                        إرسال الطلب
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+        </div>
+      </div>
   </div>
 </section>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

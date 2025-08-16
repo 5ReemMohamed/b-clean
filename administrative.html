@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="lrt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool & Cleaning Solutions</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-sparkles me-2"></i>
+                B Clean
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center gap-3 gap-lg-4 mb-4 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الرئيسية" data-en="Home" href="index.html#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="من نحن" data-en="About"  href="index.html#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الخدمات" data-en="Services"  href="index.html#services">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الأسعار" data-en="Pricing"  href="index.html#pricing">الأسعار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="الفريق" data-en="Team"  href="index.html#team">الفريق</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-ar="اتصل بنا" data-en="Contact"  href="index.html#contact">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-ar="الإدارة" data-en=""  href="administrative.html" role="button" data-bs-toggle="dropdown">
+                            الإدارة
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" data-ar="النماذج الإدارية" data-en="Administrative Models"  href="#">النماذج الإدارية</a></li>
+                            <li><a class="dropdown-item" data-ar="ادارة المخزون" data-en="Inventory Management"  href="warehouse.html">إدارة المخزون</a></li>
+                            <li><a class="dropdown-item" data-ar="الموارد البشرية" data-en="Human Resources"  href="HR.html">الموارد البشرية</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <button class="btn btn-outline-light me-2" id="langBtn">
+                        <i class="fas fa-language"></i>
+                        EN
+                    </button>
+                    <a href="https://wa.me/249123456789" class="btn btn-success" data-ar="واتساب" data-en="Whatsapp" >
+                        <i class="fab fa-whatsapp me-1"></i>
+                        <span>واتساب</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main>
+    <section class="admin-header section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold mb-4" data-ar="النماذج الإدارية" data-en="Administrative models">
+                        <i class="fas fa-clipboard-list me-3"></i>
+                        النماذج الإدارية
+                    </h1>
+                    <p data-ar="إدارة طلبات العملاء ومتابعة سير العمل" data-en="Managing customer requests and following up on work progress" class="lead">إدارة طلبات العملاء ومتابعة سير العمل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+        <div class="form-section">
+            <div class="form-header">
+                <h3 data-ar="طلبات العملاء" data-en="Customer requests">
+                    <i class="fas fa-user-friends me-2"></i>
+                    طلبات العملاء
+                </h3>
+                <p class="text-muted mb-0" data-ar="عرض وإدارة جميع طلبات الخدمة الواردة" data-en="View and manage all incoming service requests">عرض وإدارة جميع طلبات الخدمة الواردة</p>
+            </div>
+            
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" 
+       class="form-control" 
+       data-ar="البحث في الطلبات ...." 
+       data-en="Search in Requests"  
+       placeholder="البحث في الطلبات..." 
+       id="searchRequests">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" id="filterStatus">
+                        <option data-ar="جميع الحالات" data-en="All Cases">جميع الحالات</option>
+                        <option data-ar="قيد الانتظار" data-en="pending" value="pending">قيد الانتظار</option>
+                        <option data-ar="قيد التنفيذ" data-en="progress" value="progress">قيد التنفيذ</option>
+                        <option data-ar="مكتمل" data-en="complete" value="complete">مكتمل</option>
+                        <option data-ar="مؤجل" data-en="deferred" value="deferred">مؤجل</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn first-btn" data-ar="تحديث" data-en="Refresh" >
+                        <i class="fas fa-sync me-1"></i>
+                        تحديث
+                    </button>
+                </div>
+            </div>
+            
+            <div id="requestsList">
+                <!-- Customer requests will be loaded here -->
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <h3 data-ar="متابعة سير العمل" data-en="Follow up on the workflow">
+                    <i class="fas fa-tasks me-2"></i>
+                    متابعة سير العمل
+                </h3>
+                <p class="text-muted mb-0" data-ar="تحديث حالة الطلبات وإضافة ملاحظات" data-en="Update order status and add notes">تحديث حالة الطلبات وإضافة ملاحظات</p>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table workflow-table">
+                    <thead>
+                        <tr>
+                            <th data-en="Request number" data-ar="رقم الطلب">رقم الطلب</th>
+                            <th data-en="Name of responsible employee" data-ar="اسم الموظف المسؤول">اسم الموظف المسؤول</th>
+                            <th data-en="Implementation status" data-ar="حالة التنفيذ">حالة التنفيذ</th>
+                            <th data-en="supervisor's notes" data-ar="ملاحظات المشرف">ملاحظات المشرف</th>
+                            <th data-en="procedures" data-ar="الإجراءات">الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="workflowTable">
+                        <!-- Workflow items will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <h3 data-ar="إضافة متابعة جديدة" data-en="Add a new follow-up">
+                    <i class="fas fa-plus-circle me-2"></i>
+                    إضافة متابعة جديدة
+                </h3>
+            </div>
+            
+            <form id="workflowForm">
+                <div class="row g-3 justify-content-center align-items-center">
+                    <div class="col-lg-6 col-xl-4">
+                        <label class="form-label" data-ar="رقم الطلب" data-en="Request number">رقم الطلب</label>
+                        <select class="form-select" id="orderNumber" required>
+                            <option data-ar="اختر رقم الطلب" data-en="choose request number">اختر رقم الطلب</option>
+                            <option data-ar="1" data-en="1" value="1">1</option>
+                            <option data-ar="2" data-en="2" value="2">2</option>
+                            <option data-ar="3" data-en="3" value="3">3</option>
+                            <option data-ar="4" data-en="4" value="4">4</option>
+                            <option data-ar="5" data-en="5" value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <label class="form-label" data-ar="اسم الموظف المسؤول" data-en="Name of the responsible employee">اسم الموظف المسؤول</label>
+                        <input type="text"  class="form-control"  id="responsibleEmployee"  required data-ar="اسم الموظف المسؤول"  data-en="Responsible Employee" placeholder="اسم الموظف المسؤول">
+
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <label class="form-label" data-ar="حالة التنفيذ" data-en="Implementation status">حالة التنفيذ</label>
+                        <select class="form-select" id="implementationStatus" required>
+                            <option data-en="Select status" data-ar="اختر الحالة" value="">اختر الحالة</option>
+                            <option data-ar="قيد التنفيذ" data-en="progress" value="progress">قيد التنفيذ</option>
+                            <option data-ar="مكتمل" data-en="complete" value="complete">مكتمل</option>
+                            <option data-ar="مؤجل" data-en="deferred" value="deferred">مؤجل</option>
+                        </select>
+                    </div>
+                  
+                    <div class="col-12">
+                        <label class="form-label" data-ar="ملاحظات المشرف" data-en="Supervisor notes">ملاحظات المشرف</label>
+                        <textarea class="form-control" 
+          id="supervisorNotes" 
+          rows="3"
+          data-ar="أدخل ملاحظات المشرف هنا..." 
+          data-en="Enter supervisor notes here..."
+          placeholder="أدخل ملاحظات المشرف هنا..."></textarea>
+
+                    </div>
+                      <div class="col-6 col-lg-3">
+                     
+                         <label class="form-label">&nbsp;</label>
+                        <button type="submit" class="btn first-btn w-100" data-ar="إضافة" data-en="Add">
+                            <i class="fas fa-plus me-1"></i>
+                            إضافة
+                        </button>
+                     
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <h3 data-ar="النموذج المالي" data-en="Financial Model">
+                    <i class="fas fa-chart-line me-2"></i>
+                    النموذج المالي
+                </h3>
+                <p data-ar="تسجيل المصروفات والإيرادات" data-en="Recording Expenses and Revenues" class="text-muted mb-0">تسجيل المصروفات والإيرادات</p>
+            </div>
+            
+            <div class="row g-4 mb-4 financial">
+                <div class="col-md-4">
+                    <div class="card text-white">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-en="Total Revenue" data-ar="إجمالي الإيرادات">
+                                <i class="fas fa-arrow-up me-2"></i>
+                                إجمالي الإيرادات
+                            </h5>
+                            <h2 id="totalRevenue" data-ar="0 جنية سوداني" data-en="0 Sudanese Pound">0 ج.س</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card  text-white">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-en="Total expenses" data-ar=" إجمالي المصروفات">
+                                <i class="fas fa-arrow-down me-2"></i>
+                                إجمالي المصروفات
+                            </h5>
+                            <h2 id="totalExpenses" data-ar="0 جنية سوداني" data-en="0 Sudanese Pound">0 ج.س</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card  text-white">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-ar=" صافي الربح" data-en="Net profit">
+                                <i class="fas fa-balance-scale me-2"></i>
+                                صافي الربح
+                            </h5>
+                            <h2 id="netProfit" data-ar="0 جنية سوداني" data-en="0 Sudanese Pound">0 ج.س</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="financialForm">
+                <div class="row g-3 mb-3 justify-content-center align-items-center">
+                    <div class="col-md-2">
+                        <label class="form-label" data-ar="التاريخ" data-en="Date">التاريخ</label>
+                        <input type="date" class="form-control" id="transactionDate" required>
+                    </div>
+                    <div class="col-xl-2">
+                        <label class="form-label" data-ar="نوع المعاملة" data-en="Transaction Type">نوع المعاملة</label>
+                        <select class="form-select" id="transactionType" required>
+                            <option data-ar="اختر النوع" data-en="Select Type" value="">اختر النوع</option>
+                            <option data-ar="إيراد" data-en="revenue" value="revenue">إيراد</option>
+                            <option data-ar="مصروف" data-en="expense" value="expense">مصروف</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-2">
+                        <label class="form-label" data-ar="المبلغ (ج.س)" data-en="Amount (EGP.s)">المبلغ (ج.س)</label>
+                        <input type="number" class="form-control" id="transactionAmount" step="0.01" required>
+                    </div>
+                    <div class="col-xl-3">
+                        <label class="form-label" data-ar="الجهة الدافعة/المستلمة" data-en="Paying/Receiving Entity">الجهة الدافعة/المستلمة</label>
+                        <input type="text" class="form-control" id="transactionParty" required>
+                    </div>
+                    <div class="col-xl-2">
+                        <label class="form-label" data-ar="وصف المعاملة" data-en="Transaction Description">وصف المعاملة</label>
+                        <input type="text" class="form-control" id="transactionDescription" required>
+                    </div>
+                    <div class="col-5 col-xl-1">
+                        <label class="form-label">&nbsp;</label>
+                        <button type="submit" class="btn first-btn w-100">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th data-ar="التاريخ" data-en="Date">التاريخ</th>
+                            <th data-ar="النوع" data-en="Type">النوع</th>
+                            <th data-ar="المبلغ" data-en="Amount">المبلغ</th>
+                            <th data-ar="الجهة" data-en="Entity">الجهة</th>
+                            <th data-ar="الوصف" data-en="Description">الوصف</th>
+                            <th data-ar="الإجراءات" data-en="Procedures">الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="financialTable">
+                        <!-- Financial transactions will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+ 
+</main>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/administrative.js"></script>
+</body>
+</html>
