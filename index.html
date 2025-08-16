@@ -799,48 +799,67 @@
       </div>
       <div class="row g-4">
         <div class="col-lg-6">
-           <div class="row g-4">
-             <div class="col-lg-6">
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
-                  </div>
-                  <h3 data-ar="الهاتف" data-en="Phone">الهاتف</h3>
-                  <a href=""></a>
+           <div class="review-form-card">
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold" data-ar="شاركنا رأيك" data-en="Share Your Feedback">
+                            <i class="fas fa-pen-fancy me-2"></i>
+                            شاركنا رأيك
+                        </h3>
+                        <p class="text-muted" data-ar="نقدر آراءكم وتقييماتكم لمساعدتنا في تحسين خدماتنا" 
+                          data-en="We value your feedback and reviews to help us improve our services">
+                            نقدر آراءكم وتقييماتكم لمساعدتنا في تحسين خدماتنا
+                        </p>
+                    </div>
+
+                    
+                    <form id="reviewForm" onsubmit="submitReview(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" data-ar="الاسم" data-en="Name" placeholder="الاسم" class="form-control" id="reviewerName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" data-ar="رقم الهاتف " data-en="Phone Number" placeholder="رقم الهاتف " id="reviewerPhone">
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="serviceType" required>
+                                    <option value="" data-ar="اختر نوع الخدمة" data-en="Choose the Service">اختر نوع الخدمة</option>
+                                    <option value="regular" data-ar="تنظيف عادي" data-en="Regular Cleaning">تنظيف عادي</option>
+                                    <option value="deep" data-ar="تنظيف عميق" data-en="Deep Cleaning">تنظيف عميق</option>
+                                    <option value="floor" data-ar="تنظيف الأرضيات" data-en="Floor Cleaning">تنظيف الأرضيات</option>
+                                    <option value="carpet" data-ar="تنظيف السجاد" data-en="Carpet Cleaning">تنظيف السجاد</option>
+                                    <option value="facade" data-ar="تنظيف الواجهات" data-en="Facade Cleaning">تنظيف الواجهات</option>
+                                    <option value="office" data-ar="تنظيف المكاتب والعيادات" data-en="Office & Clinic Cleaning">تنظيف المكاتب والعيادات</option>
+                                    <option value="disinfection" data-ar="التعقيم" data-en="Disinfection">التعقيم</option>
+                                    <option value="pest" data-ar="رش المبيدات" data-en="Pest Control">رش المبيدات</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="star-rating" id="starRating">
+                                    <span class="star" data-rating="1"><i class="fas fa-star"></i></span>
+                                    <span class="star" data-rating="2"><i class="fas fa-star"></i></span>
+                                    <span class="star" data-rating="3"><i class="fas fa-star"></i></span>
+                                    <span class="star" data-rating="4"><i class="fas fa-star"></i></span>
+                                    <span class="star" data-rating="5"><i class="fas fa-star"></i></span>
+                                </div>
+                                <input type="hidden" id="rating" required>
+                            </div>
+                            <div class="col-12">
+                            
+                                <textarea class="form-control" id="reviewText" rows="4" data-ar="شاركنا تجربتك مع خدماتنا..." data-en="Share your experience with our services..." placeholder="شاركنا تجربتك مع خدماتنا..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn first-btn btn-lg px-5" data-ar="إرسال التقييم" data-en="Submit Review">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    إرسال التقييم
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-             </div>
-             <div class="col-lg-6">
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <h3 data-ar="البريد الإلكتروني" data-en="E-mail">البريد الإلكتروني</h3>
-                  <a href=""></a>
-                </div>
-             </div>
-             <div class="col-lg-6">
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-location-dot"></i> 
-                  </div>
-                  <h3 data-ar="العنوان" data-en="Address">العنوان</h3>
-                  <a href=""></a>
-                </div>
-             </div>
-             <div class="col-lg-6">
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-brands fa-whatsapp"></i>
-                  </div>
-                  <h3 data-ar="واتساب" data-en="Whatsapp">واتساب</h3>
-                  <a href=""></a>
-                </div>
-             </div>
-           </div>
         </div>
         <div class="col-lg-6">
               <div class="contact-form">
-                        <h4 class="mb-4">اطلب خدمة</h4>
+                <h4 class="mb-4 text-center" data-ar="اطلب خدمة" data-en="Request a Service">اطلب خدمة</h4>
                         <form id="serviceRequestForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -851,10 +870,16 @@
                                 </div>
                                 <div class="col-12">
                                    <select class="form-select" required>
-                                      <option value="" data-ar="نوع الخدمة" data-en="Service Type">نوع الخدمة</option>
+                                     <option value="" data-ar="اختر نوع الخدمة" data-en="Choose the Service">اختر نوع الخدمة</option>
                                       <option value="regular" data-ar="تنظيف عادي" data-en="Regular Cleaning">تنظيف عادي</option>
                                       <option value="deep" data-ar="تنظيف عميق" data-en="Deep Cleaning">تنظيف عميق</option>
-                                      <option value="specialized" data-ar="تنظيف متخصص" data-en="Specialized Cleaning">تنظيف متخصص</option>
+                                      <option value="floor" data-ar="تنظيف الأرضيات" data-en="Floor Cleaning">تنظيف الأرضيات</option>
+                                      <option value="carpet" data-ar="تنظيف السجاد" data-en="Carpet Cleaning">تنظيف السجاد</option>
+                                      <option value="facade" data-ar="تنظيف الواجهات" data-en="Facade Cleaning">تنظيف الواجهات</option>
+                                      <option value="office" data-ar="تنظيف المكاتب والعيادات" data-en="Office & Clinic Cleaning">تنظيف المكاتب والعيادات</option>
+                                      <option value="disinfection" data-ar="التعقيم" data-en="Disinfection">التعقيم</option>
+                                      <option value="pest" data-ar="رش المبيدات" data-en="Pest Control">رش المبيدات</option>
+
                                     </select>
 
                                 </div>
@@ -877,8 +902,8 @@
                                    <textarea class="form-control" rows="3" placeholder="ملاحظات إضافية" data-ar="ملاحظات إضافية" data-en="Additional Notes"></textarea>
 
                                 </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn first-btn w-100" data-ar="إرسال الطلب" data-en="Submit Request">
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn first-btn btn-lg px-5" data-ar="إرسال الطلب" data-en="Submit Request">
                                         <i class="fas fa-paper-plane mx-2"></i>
                                         إرسال الطلب
                                     </button>
@@ -891,10 +916,44 @@
   </div>
 </section>
 
+<footer class="py-5">
+<div class="container">
+  <div class="row g-4">
+    <div class="col-12">
+      <ul class="footer-links text-decoration-none list-unstyled d-flex flex-wrap justify-content-center align-items-center gap-4 text-white">
+        <li><a  class="text-decoration-none text-white" data-ar="الرئيسيه" data-en="Home" href="#home">الرئيسيه</a></li>
+        <li><a class="text-decoration-none text-white" data-ar="من نحن" data-en="About" href="#about">من نحن</a></li>
+        <li><a class="text-decoration-none text-white" data-ar="الخدمات" data-en="Services" href="#services">الخدمات</a></li>
+        <li><a class="text-decoration-none text-white" data-ar="الاسعار" data-en="Pricing" href="#price">الاسعار</a></li>
+        <li><a class="text-decoration-none text-white" data-ar="الفريق" data-en="Team" href="#team">الفريق</a></li>
+        <li><a class="text-decoration-none text-white" data-ar="اتصل بنا" data-en="Contact" href="#contact">اتصل بنا</a></li>
+      </ul>
+    </div>
+    <div class="col-12">
+       <ul class="social-links list-unstyled d-flex justify-content-center align-items-center gap-4 text-white">
+        <li><a href="" class="text-decoration-none text-white" ><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="" class="text-decoration-none text-white" ><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="" class="text-decoration-none text-white" ><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="" class="text-decoration-none text-white" ><i class="fas fa-phone"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-12">
+    <div class="company-design text-white  d-flex gap-2 justify-content-center">
+        <p data-ar="تم التصميم بواسطه شركة   "
+           data-en="Designed by">
+           تم التصميم بواسطه شركة 
+        </p>
+        <a href="https://www.facebook.com/people/GMTWeb/100090592885243/?mibextid=ZbWKwL" target="_blank">GMT</a> 
+    </div>
+</div>
 
+  </div>
+</div>
+</footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/administrative.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
