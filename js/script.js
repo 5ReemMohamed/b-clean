@@ -36,25 +36,7 @@ function initTestimonialSwiper() {
 }
 
 
-    function initSwiper(direction) {
-        if (window.swipers && window.swipers.length) {
-            window.swipers.forEach(sw => sw.destroy(true, true));
-        }
-        window.swipers = [];
-        document.querySelectorAll(".myCardSwiper").forEach(swiperEl => {
-            let swiper = new Swiper(swiperEl, {
-                effect: "cards",
-                grabCursor: true,
-               
-                cardsEffect: {
-                    perSlideRotate: 2,
-                    perSlideOffset: 8
-                },
-                rtl: direction === "rtl",
-            });
-            window.swipers.push(swiper);
-        });
-    }
+   
 
    function applyLanguage(lang) {
     
@@ -82,6 +64,7 @@ function initTestimonialSwiper() {
     if (val) node.setAttribute("title", val);
       setTimeout(() => {
     initTestimonialSwiper();
+    initSwiper()
   }, 0);
 });
 
@@ -172,7 +155,25 @@ function initTestimonialSwiper() {
         priceDisplay.innerHTML = totalPrice.toLocaleString() + " جنيه سوداني";
     };
 
- 
+  function initSwiper(direction) {
+        if (window.swipers && window.swipers.length) {
+            window.swipers.forEach(sw => sw.destroy(true, true));
+        }
+        window.swipers = [];
+        document.querySelectorAll(".myCardSwiper").forEach(swiperEl => {
+            let swiper = new Swiper(swiperEl, {
+                effect: "cards",
+                grabCursor: true,
+               
+                cardsEffect: {
+                    perSlideRotate: 2,
+                    perSlideOffset: 8
+                },
+                rtl: direction === "rtl",
+            });
+            window.swipers.push(swiper);
+        });
+    }
     AOS.init({
         duration: 1000,
         once: false

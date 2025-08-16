@@ -985,11 +985,11 @@ color: #46638d !important;
 }
 .swiper {
   width: 100%;
-  max-width: 100%;
+  max-width: 70%;
 }
 @media screen and (min-width:992px) {
     .swiper {
-  max-width: 70%;
+      max-width: 70%;
 }
 }
 
@@ -1432,4 +1432,9 @@ margin-bottom: 30px;
 
 html[dir="rtl"] .form-select {
     background-position: left 1rem center;
+}
+
+
+.swiper-3d {
+    perspective: 1294px;
 }
